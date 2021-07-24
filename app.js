@@ -141,12 +141,6 @@ document.addEventListener("DOMContentLoaded", () => {
         score.textContent = result;
         hitPosition = null;
         randomSquare();
-        /*
-        result--;
-        score.textContent = result;
-        hitPosition = null;
-        setTimeout(randomSquare, 1000);
-        */
       }
     });
   });

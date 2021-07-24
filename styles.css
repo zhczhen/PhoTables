@@ -1,8 +1,13 @@
 .grid {
+  margin: auto;
   width: 510px;
   height: 510px;
   display: flex;
   flex-wrap: wrap;
+}
+
+.text {
+  text-align: center;
 }
 
 .square {

@@ -77,7 +77,7 @@ document.addEventListener("DOMContentLoaded", () => {
       img: "images/19.png",
     },
   ];
-  const squares = document.querySelectorAll(".square");
+  const tables = document.querySelectorAll(".table");
   const mole = document.querySelector(".mole");
   const timeLeft = document.querySelector("#time-left");
   const score = document.querySelector("#score");
@@ -90,38 +90,70 @@ document.addEventListener("DOMContentLoaded", () => {
   let matherino = 0;
   let cardsChosen = [];
   let cardsChosenId = [];
-  let randomSquared = null;
+  let randomTabled = null;
 
-  function randomSquare() {
-    squares.forEach((square) => {
-      square.classList.remove("mole");
+  function randomTable() {
+    tables.forEach((table) => {
+      table.classList.remove("mole");
+      console.log(table);
     });
-    matherino = Math.floor(Math.random() * 25);
+
+    console.log("tables.length " + tables.length);
+    matherino = Math.floor(Math.random() * 22);
+    console.log("randomNum: " + matherino);
+
+    /*
     console.log("before " + matherino);
 
-    while (matherino == 1 || matherino == 2 || matherino == 3) {
-      matherino = Math.floor(Math.random() * 25);
+    
+    while (
+      matherino != 0 &&
+      matherino != 7 &&
+      matherino != 16 &&
+      matherino != 18 &&
+      matherino != 19 &&
+      matherino != 21 &&
+      matherino != 23 &&
+      matherino != 32 &&
+      matherino != 34 &&
+      matherino != 35 &&
+      matherino != 37 &&
+      matherino != 39 &&
+      matherino != 48 &&
+      matherino != 50 &&
+      matherino != 51 &&
+      matherino != 53 &&
+      matherino != 55 &&
+      matherino != 64 &&
+      matherino != 66 &&
+      matherino != 67 &&
+      matherino != 69 &&
+      matherino != 71
+    ) {
+      matherino = Math.floor(Math.random() * 22);
       console.log("inside " + matherino);
     }
     console.log("after " + matherino);
-    randomSquared = squares[matherino];
-    table.textContent = randomSquared.id;
+    */
 
-    squares[1].classList.add("null1");
-    squares[2].classList.add("null2");
-    squares[3].classList.add("null3");
+    randomTabled = tables[matherino];
+    table.textContent = randomTabled.id;
 
-    //randomSquared.classList.add('mole')
+    //tables[1].classList.add("null1");
+    //tables[2].classList.add("null2");
+    //tables[3].classList.add("null3");
 
-    hitPosition = randomSquared.id;
+    //randomTabled.classList.add('mole')
+
+    hitPosition = randomTabled.id;
   }
 
-  squares.forEach((square) => {
-    square.addEventListener("mousedown", () => {
-      if (square.id == hitPosition) {
+  tables.forEach((table) => {
+    table.addEventListener("mousedown", () => {
+      if (table.id == hitPosition) {
         //let cardId = this.getAttribute('data-id')
-        randomSquared.classList.add("mole");
-        //square.classList.add(cardArray[matherino].img)
+        randomTabled.classList.add("mole");
+        //table.classList.add(cardArray[matherino].img)
         /*cardsChosen.push(cardArray[matherino].name)
       cardsChosenId.push(matherino)
       this.setAttribute('src', cardArray[matherino].img)
@@ -133,22 +165,22 @@ document.addEventListener("DOMContentLoaded", () => {
         result++;
         score.textContent = result;
         hitPosition = null;
-        setTimeout(randomSquare, 1000);
+        setTimeout(randomTable, 1000);
       } else {
         alert("GAME OVER! Your final score is " + result);
-        randomSquared.classList.add("mole");
+        randomTabled.classList.add("mole");
         result = 0;
         score.textContent = result;
         hitPosition = null;
-        setTimeout(randomSquare, 1000);
+        setTimeout(randomTable, 1000);
       }
     });
   });
 
-  randomSquare();
+  randomTable();
   /*
 function moveMole() {
-  timerId = setInterval(randomSquare,1000)
+  timerId = setInterval(randomTable,1000)
 }
 
 moveMole()

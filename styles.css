@@ -1,7 +1,7 @@
 .grid {
   margin: auto;
-  width: 510px;
-  height: 510px;
+  width: 600px;
+  height: 600px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -11,9 +11,68 @@
 }
 
 .square {
-  height: 100px;
-  width: 100px;
+  height: 70px;
+  width: 70px;
+  background-color: #deb887;
+  border: solid #deb887 1px;
+}
+
+.square_door {
+  height: 70px;
+  width: 70px;
+  background-color: #deb887;
+  border-top: dashed black 1px;
+  border-right: solid #deb887 1px;
+  border-left: solid #deb887 1px;
+  border-bottom: solid #deb887 1px;
+}
+
+.square_top {
+  height: 70px;
+  width: 70px;
+  border-top: solid black 1px;
+  border-right: solid #deb887 1px;
+  border-left: solid #deb887 1px;
+  border-bottom: solid #deb887 1px;
+
+  background-color: #deb887;
+}
+
+.square_left {
+  height: 70px;
+  width: 70px;
+  border-left: solid black 1px;
+  border-top: solid #deb887 1px;
+  border-right: solid #deb887 1px;
+  border-bottom: solid #deb887 1px;
+  background-color: #deb887;
+}
+
+.square_right {
+  height: 70px;
+  width: 70px;
+  border-left: solid #deb887 1px;
+  border-top: solid #deb887 1px;
+  border-right: solid black 1px;
+  border-bottom: solid #deb887 1px;
+  background-color: #deb887;
+}
+
+.square_bottom {
+  height: 70px;
+  width: 70px;
+  border-left: solid #deb887 1px;
+  border-top: solid #deb887 1px;
+  border-right: solid #deb887 1px;
+  border-bottom: solid black 1px;
+  background-color: #deb887;
+}
+
+.table {
+  height: 70px;
+  width: 70px;
   border: solid black 1px;
+  background-color: #a52a2a;
 }
 
 .mole {

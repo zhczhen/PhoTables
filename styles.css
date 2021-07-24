@@ -1,18 +1,32 @@
 .grid {
-	width: 510px;
-	height: 510px;
-	display: flex;
-	flex-wrap: wrap;
+  width: 510px;
+  height: 510px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .square {
-	height: 100px;
-	width: 100px;
-	border: solid black 1px;
+  height: 100px;
+  width: 100px;
+  border: solid black 1px;
 }
 
 .mole {
-	background-image: url("mole.jpg");
-	background-size: cover;
+  background-image: url("mole.jpg");
+  background-size: cover;
 }
 
+.null1 {
+  background-image: url("Entrance1.png");
+  background-size: cover;
+}
+
+.null2 {
+  background-image: url("Entrance2.png");
+  background-size: cover;
+}
+
+.null3 {
+  background-image: url("Entrance3.png");
+  background-size: cover;
+}

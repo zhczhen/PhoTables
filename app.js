@@ -81,13 +81,16 @@ document.addEventListener("DOMContentLoaded", () => {
   const mole = document.querySelector(".mole");
   const timeLeft = document.querySelector("#time-left");
   const score = document.querySelector("#score");
+  const scores = document.querySelector("#scores");
+
   const table = document.querySelector("#table");
 
   let result = 0;
   let hitPosition;
-  let currentTime = 60;
+  let currentTime = 30;
   let timerId = null;
   let matherino = 0;
+  let scoresTable = [];
   let cardsChosen = [];
   let cardsChosenId = [];
   let randomTabled = null;
@@ -168,9 +171,11 @@ document.addEventListener("DOMContentLoaded", () => {
         setTimeout(randomTable, 1000);
       } else {
         alert("GAME OVER! Your final score is " + result);
+        scoresTable.push(result);
         randomTabled.classList.add("mole");
         result = 0;
         score.textContent = result;
+        scores.textContent = scoresTable;
         hitPosition = null;
         setTimeout(randomTable, 1000);
       }
@@ -179,25 +184,31 @@ document.addEventListener("DOMContentLoaded", () => {
 
   randomTable();
   /*
-function moveMole() {
-  timerId = setInterval(randomTable,1000)
-}
+  function moveMole() {
+    timerId = setInterval(randomTable, 1000);
+  }
 
-moveMole()
-
-/*
-function countDown() {
- currentTime--
- timeLeft.textContent = currentTime
-
- if (currentTime == 0) {
-   clearInterval(countDownTimerId)
-   clearInterval(timerId)
-   alert('GAME OVER! Your final score is ' + result)
- }
-
-}
-
-let countDownTimerId = setInterval(countDown, 1000)
+  moveMole();
 */
+  function countDown() {
+    currentTime--;
+    timeLeft.textContent = currentTime;
+
+    if (currentTime == 0) {
+      clearInterval(countDownTimerId);
+      clearInterval(timerId);
+      alert("GAME OVER! Your final score is " + result);
+      scoresTable.push(result);
+      result = 0;
+      score.textContent = result;
+      scores.textContent = scoresTable;
+
+      countDownTimerId = setInterval(countDown, 1000);
+      timerId = null;
+      currentTime = 30;
+      timeLeft.textContent = currentTime;
+    }
+  }
+
+  let countDownTimerId = setInterval(countDown, 1000);
 });

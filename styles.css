@@ -6,8 +6,28 @@
   flex-wrap: wrap;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+.box {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.box div {
+  width: 200px;
+  height: 269px;
+}
+
 .text {
   text-align: center;
+}
+
+.vertical_text {
+  text-align: center;
+  white-space: pre;
 }
 
 .square {

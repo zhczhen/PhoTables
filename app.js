@@ -135,12 +135,12 @@ document.addEventListener("DOMContentLoaded", () => {
         hitPosition = null;
         setTimeout(randomSquare, 1000);
       } else {
-        randomSquared.classList.add("mole");
         alert("GAME OVER! Your final score is " + result);
+        randomSquared.classList.add("mole");
         result = 0;
         score.textContent = result;
         hitPosition = null;
-        randomSquare();
+        setTimeout(randomSquare, 1000);
       }
     });
   });

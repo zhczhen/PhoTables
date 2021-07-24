@@ -110,7 +110,12 @@ function randomSquare() {
   randomSquared = squares[matherino]
   table.textContent = randomSquared.id
 
+  squares[21].classList.add('mole')
+  squares[22].classList.add('mole')
+  squares[23].classList.add('mole')
+
   //randomSquared.classList.add('mole')
+
 
   hitPosition = randomSquared.id
 }

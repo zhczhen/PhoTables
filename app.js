@@ -99,7 +99,14 @@ function randomSquare() {
     square.classList.remove('mole')
   })
   matherino = Math.floor(Math.random() * 25)
-  console.log(matherino)
+  console.log("before "+matherino)
+
+  while(matherino==21 || matherino==22 || matherino==23){
+    matherino = Math.floor(Math.random() * 25)
+    console.log("inside "+matherino)
+
+  }
+  console.log("after "+matherino)
   randomSquared = squares[matherino]
   table.textContent = randomSquared.id
 

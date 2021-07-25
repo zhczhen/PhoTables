@@ -171,6 +171,8 @@ document.addEventListener("DOMContentLoaded", () => {
         setTimeout(randomTable, 1000);
       } else {
         alert("GAME OVER! Your final score is " + result);
+        clearInterval(countDownTimerId);
+        clearInterval(timerId);
         scoresTable.push(result);
         randomTabled.classList.add("mole");
         result = 0;
@@ -178,6 +180,11 @@ document.addEventListener("DOMContentLoaded", () => {
         scores.textContent = scoresTable;
         hitPosition = null;
         setTimeout(randomTable, 1000);
+
+        countDownTimerId = setInterval(countDown, 1000);
+        timerId = null;
+        currentTime = 30;
+        timeLeft.textContent = currentTime;
       }
     });
   });

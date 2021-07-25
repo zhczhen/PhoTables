@@ -168,7 +168,7 @@ document.addEventListener("DOMContentLoaded", () => {
         result++;
         score.textContent = result;
         hitPosition = null;
-        setTimeout(randomTable, 1000);
+        setTimeout(randomTable, 500);
       } else {
         alert("GAME OVER! Your final score is " + result);
         clearInterval(countDownTimerId);
@@ -179,7 +179,7 @@ document.addEventListener("DOMContentLoaded", () => {
         score.textContent = result;
         scores.textContent = scoresTable;
         hitPosition = null;
-        setTimeout(randomTable, 1000);
+        setTimeout(randomTable, 500);
 
         countDownTimerId = setInterval(countDown, 1000);
         timerId = null;

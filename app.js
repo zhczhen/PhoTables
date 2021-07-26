@@ -102,7 +102,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     console.log("tables.length " + tables.length);
-    matherino = Math.floor(Math.random() * 22);
+    matherino = Math.floor(Math.random() * 23);
     console.log("randomNum: " + matherino);
 
     /*

@@ -88,10 +88,79 @@
   background-color: #deb887;
 }
 
+.square_left_top_bottom {
+  height: 70px;
+  width: 70px;
+  border-left: solid black 1px;
+  border-top: dashed black 1px;
+  border-right: solid #deb887 1px;
+  border-bottom: dashed black 1px;
+  background-color: #deb887;
+}
+
+.square_top_bottom {
+  height: 70px;
+  width: 70px;
+  border-left: solid #deb887 1px;
+  border-top: dashed black 1px;
+  border-right: solid #deb887 1px;
+  border-bottom: dashed black 1px;
+  background-color: #deb887;
+}
+.square_top_bottom_right {
+  height: 70px;
+  width: 70px;
+  border-left: solid #deb887 1px;
+  border-top: dashed black 1px;
+  border-right: solid #deb887 1px;
+  border-bottom: dashed black 1px;
+  background-color: #deb887;
+}
+
+.square_dotted {
+  height: 70px;
+  width: 70px;
+  border-left: dashed black 1px;
+  border-top: dashed black 1px;
+  border-right: dashed black 1px;
+  border-bottom: dashed black 1px;
+  background-color: #deb887;
+}
+
+.square_dotted_bottom {
+  height: 70px;
+  width: 70px;
+  border-left: solid #deb887 1px;
+  border-top: solid #deb887 1px;
+  border-right: solid #deb887 1px;
+  border-bottom: dashed black 1px;
+  background-color: #deb887;
+}
+
 .table {
   height: 70px;
   width: 70px;
   border: solid black 1px;
+  background-color: #a52a2a;
+}
+
+.table_left {
+  height: 70px;
+  width: 70px;
+  border-left: solid black 1px;
+  border-top: solid black 1px;
+  border-bottom: solid black 1px;
+  border-right: solid #a52a2a 1px;
+  background-color: #a52a2a;
+}
+
+.table_right {
+  height: 70px;
+  width: 70px;
+  border-right: solid black 1px;
+  border-top: solid black 1px;
+  border-bottom: solid black 1px;
+  border-left: solid #a52a2a 1px;
   background-color: #a52a2a;
 }
 

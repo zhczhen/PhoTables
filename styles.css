@@ -1,7 +1,7 @@
 .grid {
   margin: auto;
-  width: 560px;
-  height: 600px;
+  width: 500px;
+  height: 500px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -31,15 +31,15 @@
 }
 
 .square {
-  height: 70px;
-  width: 70px;
+  height: 60px;
+  width: 60px;
   background-color: #deb887;
   border: solid #deb887 1px;
 }
 
 .square_door {
-  height: 70px;
-  width: 70px;
+  height: 60px;
+  width: 60px;
   background-color: #deb887;
   border-top: dashed black 1px;
   border-right: solid #deb887 1px;
@@ -48,8 +48,8 @@
 }
 
 .square_top {
-  height: 70px;
-  width: 70px;
+  height: 60px;
+  width: 60px;
   border-top: solid black 1px;
   border-right: solid #deb887 1px;
   border-left: solid #deb887 1px;
@@ -59,8 +59,8 @@
 }
 
 .square_left {
-  height: 70px;
-  width: 70px;
+  height: 60px;
+  width: 60px;
   border-left: solid black 1px;
   border-top: solid #deb887 1px;
   border-right: solid #deb887 1px;
@@ -69,8 +69,8 @@
 }
 
 .square_right {
-  height: 70px;
-  width: 70px;
+  height: 60px;
+  width: 60px;
   border-left: solid #deb887 1px;
   border-top: solid #deb887 1px;
   border-right: solid black 1px;
@@ -79,8 +79,8 @@
 }
 
 .square_bottom {
-  height: 70px;
-  width: 70px;
+  height: 60px;
+  width: 60px;
   border-left: solid #deb887 1px;
   border-top: solid #deb887 1px;
   border-right: solid #deb887 1px;
@@ -89,8 +89,8 @@
 }
 
 .square_left_top_bottom {
-  height: 70px;
-  width: 70px;
+  height: 60px;
+  width: 60px;
   border-left: solid black 1px;
   border-top: dashed black 1px;
   border-right: solid #deb887 1px;
@@ -99,8 +99,8 @@
 }
 
 .square_top_bottom {
-  height: 70px;
-  width: 70px;
+  height: 60px;
+  width: 60px;
   border-left: solid #deb887 1px;
   border-top: dashed black 1px;
   border-right: solid #deb887 1px;
@@ -108,8 +108,8 @@
   background-color: #deb887;
 }
 .square_top_bottom_right {
-  height: 70px;
-  width: 70px;
+  height: 60px;
+  width: 60px;
   border-left: solid #deb887 1px;
   border-top: dashed black 1px;
   border-right: solid #deb887 1px;
@@ -118,8 +118,8 @@
 }
 
 .square_dotted {
-  height: 70px;
-  width: 70px;
+  height: 60px;
+  width: 60px;
   border-left: dashed black 1px;
   border-top: dashed black 1px;
   border-right: dashed black 1px;
@@ -128,8 +128,8 @@
 }
 
 .square_dotted_bottom {
-  height: 70px;
-  width: 70px;
+  height: 60px;
+  width: 60px;
   border-left: solid #deb887 1px;
   border-top: solid #deb887 1px;
   border-right: solid #deb887 1px;
@@ -138,15 +138,15 @@
 }
 
 .table {
-  height: 70px;
-  width: 70px;
+  height: 60px;
+  width: 60px;
   border: solid black 1px;
   background-color: #a52a2a;
 }
 
 .table_left {
-  height: 70px;
-  width: 70px;
+  height: 60px;
+  width: 60px;
   border-left: solid black 1px;
   border-top: solid black 1px;
   border-bottom: solid black 1px;
@@ -155,8 +155,8 @@
 }
 
 .table_right {
-  height: 70px;
-  width: 70px;
+  height: 60px;
+  width: 60px;
   border-right: solid black 1px;
   border-top: solid black 1px;
   border-bottom: solid black 1px;
